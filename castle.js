@@ -13,3 +13,13 @@ document.querySelectorAll(".newsletter-form, .contact-form").forEach((form) => {
     event.preventDefault();
   });
 });
+
+// const icon = document.getElementById("navIcon");
+
+// const currentPage = window.location.pathname;
+
+// if (currentPage.includes("product.html")) {
+//   icon.src = "img/product__logo.svg"; // icon for product page
+// } else {
+//   icon.src = "img/Group.svg"; // default icon (home)
+// }

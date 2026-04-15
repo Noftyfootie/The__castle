@@ -2,8 +2,9 @@
   --bg: #ffffff;
   --surface: #f7f7f7;
   --surface-soft: #fcfcfc;
-  --text: #111111;
-  --muted: #5d5d5d;
+  --text: #000000;
+  /* --muted: #5d5d5d; */
+  --muted: #434343;
   --line: #d8d8d8;
   --accent: #1a9bff;
   --accent-deep: #1288ef;
@@ -97,9 +98,13 @@ textarea {
 }
 
 .nav-link {
-  font-size: 0.95rem;
-  font-weight: 500;
-  color: #292929;
+  font-family: "inter", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 250;
+  color: #000000;
+  font-style: Light;
+  line-height: 100%;
+  letter-spacing: 0%;
 }
 
 .nav-link.is-active {
@@ -116,7 +121,13 @@ textarea {
 }
 
 .brand span {
+  font-family: "poppins", sans-serif;
   color: var(--text);
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 26px;
+  line-height: 100%;
+  letter-spacing: 0%;
 }
 
 .brand-accent span,
@@ -140,14 +151,14 @@ textarea {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #bcbcbc;
-  border-radius: 14px;
+  border: 0.7px solid #808080;
+  border-radius: 7px;
   background: #fff;
 }
 
 .icon-button img {
-  width: 22px;
-  height: 22px;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
 }
 
@@ -158,12 +169,16 @@ textarea {
   align-items: center;
   justify-content: center;
   min-height: 50px;
-  padding: 0.7rem 2rem;
+  padding: 10px 47px;
   border-radius: 999px;
   border: 1px solid transparent;
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 1.5rem;
   line-height: 1;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: ExtraBold;
+  line-height: 100%;
+  letter-spacing: 0%;
   transition:
     transform 0.2s ease,
     background-color 0.2s ease,
@@ -246,12 +261,13 @@ textarea {
   width: fit-content;
   margin: 0 0 2rem;
   padding: 0.6rem 3.15rem;
-  border: 1px solid #acacac;
-  border-radius: 18px;
+  border: 1px solid #808080;
+  border-radius: 10px;
   color: var(--accent);
-  font-size: 0.9rem;
+  font-size: 20px;
   font-weight: 600;
-  line-height: 1;
+  line-height: 100%;
+  letter-spacing: 0%;
 }
 
 .hero {
@@ -585,9 +601,12 @@ textarea {
 .footer-grid h3 {
   margin: 0 0 1.6rem;
   text-transform: uppercase;
-  font-size: 0.82rem;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  line-height: 1.1;
+  font-style: Bold;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
 }
 
 .footer-grid > div:not(.footer-brand) {
@@ -598,7 +617,7 @@ textarea {
 
 .footer-grid > div:not(.footer-brand) a,
 .footer-grid > div:not(.footer-brand) p {
-  color: #8a8a8a;
+  color: #808080;
 }
 
 .newsletter-form {
