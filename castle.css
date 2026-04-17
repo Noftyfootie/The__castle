@@ -996,6 +996,19 @@ textarea {
     flex-direction: column;
     align-items: flex-start;
   }
+
+  .product-grid {
+    grid-template-columns: repeat(3, minmax(240px, 1fr));
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+  }
+
+  .feature-grid {
+    grid-template-columns: repeat(3, minmax(180px, 1fr));
+    gap: 1.5rem;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+  }
 }
 
 @media (max-width: 820px) {
@@ -1003,43 +1016,80 @@ textarea {
     --container: min(100% - 32px, 720px);
   }
 
-  .menu-toggle {
-    display: inline-block;
-  }
-
   .nav-shell {
-    grid-template-columns: auto 1fr auto;
-    min-height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 70px;
   }
 
   .brand {
-    justify-self: start;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .menu-toggle {
+    display: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    border: 1px solid var(--line);
+    background: #fff;
+    cursor: pointer;
+  }
+
+  .menu-toggle span {
+    display: block;
+    height: 2px;
+    width: 20px;
+    background: #000;
+    margin: 5px auto;
   }
 
   .site-nav {
     position: absolute;
-    top: calc(100% + 8px);
-    left: 16px;
-    right: 16px;
+    top: 100%;
+    left: 0;
+    width: 100%;
     display: none;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-    padding: 1.25rem;
+    padding: 1rem;
     background: #fff;
-    border: 1px solid var(--line);
-    border-radius: 22px;
-    box-shadow: var(--shadow-soft);
+    border-top: 1px solid var(--line);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  }
+
+  .site-nav a {
+    width: 100%;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .site-nav a:last-child {
+    border-bottom: none;
   }
 
   .site-nav.is-open {
     display: flex;
   }
 
-  .nav-actions .button {
+  .nav-actions {
+    gap: 0.5rem;
+  }
+
+  .button-get {
     display: none;
   }
 
+  .icon-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
   .hero-grid {
     grid-template-columns: 1fr;
   }
@@ -1149,6 +1199,10 @@ textarea {
   .team-showcase .team-card:nth-child(7),
   .team-showcase .team-card:nth-child(8) {
     grid-column: span 2;
+  }
+
+  .footer-brand p {
+    margin-top: 15%;
   }
 }
 
