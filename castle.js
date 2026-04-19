@@ -23,3 +23,5 @@ document.querySelectorAll(".newsletter-form, .contact-form").forEach((form) => {
 // } else {
 //   icon.src = "img/Group.svg"; // default icon (home)
 // }
+
+//console.log(icon);
