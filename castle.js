@@ -25,3 +25,4 @@ document.querySelectorAll(".newsletter-form, .contact-form").forEach((form) => {
 // }
 
 //console.log(icon);
+//console.log('');
