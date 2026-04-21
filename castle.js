@@ -26,3 +26,4 @@ document.querySelectorAll(".newsletter-form, .contact-form").forEach((form) => {
 
 //console.log(icon);
 //console.log('');
+//console.log('okay');
